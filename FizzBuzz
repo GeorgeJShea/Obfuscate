@@ -1,0 +1,30 @@
+def Three():
+    print()
+    rager = ['F', 'A', 'B', '3', 'I', '7', 'U', 'B', 'Z', 'T', 'Z', '9', 'Z', 'Z', 'Z', '2']
+
+    for x in range(1, len(".....................................................................................................")):
+        numb = ''
+        if(x % len("rager") == 0):
+            count = 0
+            container = ''
+            for y in rager:
+                if (count % len("BZZZ") == 0):
+                    container = container + y
+                count = count + 1
+            numb = str(container)
+
+        if(x % len("cam") == 0):
+            count = 0
+            container = ''
+            for y in rager:
+                if (count % len("BZZZ") == 0 and len(container) <= 4):
+                    container = container + rager[rager.index(y) + 2]
+                count = count + 1
+            numb = str(numb + str(container))
+
+        #def Four(selection, offset):
+
+
+        print(numb or x)
+
+Three()
